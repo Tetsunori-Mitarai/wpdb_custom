@@ -95,8 +95,7 @@ class data_hoge
         $row = $wpdb->update(
             $wpdb->prefix .$wpdb->prefix . self::NAME_TABLE,
             array( // SET
-                'id'      => $this->_id,
-                'id_hoge' => $this->_id_hogee,
+                'id_hoge' => $this->_id_hoge,
                 
                 'updated' => date('Y-m-d H:i:s')
             ), 
@@ -104,7 +103,6 @@ class data_hoge
                 'id' => $this->_id
             ),
             array(
-                '%d',
                 '%d',
                 
                 '%s'
