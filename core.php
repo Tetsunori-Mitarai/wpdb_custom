@@ -93,7 +93,7 @@ class data_hoge
         }
         
         $row = $wpdb->update(
-            $wpdb->prefix .$wpdb->prefix . self::NAME_TABLE,
+            $wpdb->prefix . self::NAME_TABLE,
             array( // SET
                 'id_hoge' => $this->_id_hoge,
                 
